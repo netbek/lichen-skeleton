@@ -1,0 +1,53 @@
+body {
+  padding: 1em;
+}
+
+main {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 64em;
+}
+
+.example {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 1.5em auto;
+
+  &__output {
+    position: relative;
+    padding: 1em;
+
+    code {
+      white-space: nowrap;
+    }
+  }
+
+  &__code {
+    position: relative;
+    border-top: 1px solid #ccc;
+    background: #eee;
+
+    code,
+    pre {
+      font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+      font-size: 13 / 16 * 1em;
+      font-weight: inherit;
+      line-height: 18 / 13 * 1em;
+    }
+
+    pre {
+      line-height: 1.5em;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 1em;
+      word-break: normal;
+      word-wrap: normal;
+      overflow: auto;
+
+      code {
+        font-size: 1em;
+      }
+    }
+  }
+}
